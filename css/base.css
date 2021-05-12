@@ -1,0 +1,92 @@
+@font-face {
+	font-family: montserrat; src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: WorkSans-ExtraLight; src: url(../fonts/WorkSans-ExtraLight.otf);
+}
+
+@font-face {
+	font-family: Playfair Display; src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Playfair Display;
+	min-height: 100vh !important;
+}
+
+main {
+	min-height: 70vh;
+}
+
+li {
+	list-style-type: none;
+  }
+
+/*liens*/
+a, button, .icons i {
+	text-decoration: none !important;
+	transition: 0.3s;
+}
+
+a:hover, ul.sous-menu a:hover {
+	color: #ff4d30;
+}
+
+/* formulaire inscription/connexion */
+.form-login {
+	margin: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background:#e2e2e2;
+	border-radius: 10px;
+}
+
+h1.form-title {
+	width: 100%;
+	margin: 20px;
+}
+
+.form-login #form {
+	width: 50%;
+	margin: 20px;
+	padding: 10px 10px 10px 50px;
+	border-right: #3B3B3B solid 2px;
+}
+
+.form-login label {
+	font-size: 1.2em;
+}
+
+.form-login input, .form-login button {
+	width: 350px;
+}
+
+.connexion-exist p{
+	text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.form-login #form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 10px;
+		border-right: none;
+	}
+	.connexion-exist{
+		padding: 10px;
+	}
+}

@@ -1,0 +1,186 @@
+
+.hero {
+	height: 150vh;
+    min-height: 600px;
+	background: #fcf7eb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+    z-index: -3;
+    overflow: hidden;
+}
+
+.hero #logo {
+	position: fixed;
+    top: 25%;
+    width: 50vw;
+	animation: logo 3s 1;
+	z-index: -2;
+}
+
+.hero #building {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	animation: building 4s 1;
+	z-index: -1;
+}
+
+@keyframes logo {
+    0%{
+        opacity: 0;
+		transform: scale(3);
+    	-webkit-filter: blur(15px);
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+		-webkit-filter: blur(0px);
+    }
+}
+
+@keyframes building {
+    0%{
+        transform: translateY(300px);
+    }
+	30%{
+        transform: translateY(300px);
+	}
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* forme de division
+.shape-div {
+	position: relative;
+}
+
+.custom-shape-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider .shape-fill {
+    fill: #FFFFFF;
+}
+*/
+/* films  */
+section#films {
+    background: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 100px;
+    z-index: 1;
+}
+
+section#films h1 {
+	width: 100%;
+	font-size: 2.5em;
+	letter-spacing: 1px;
+	margin: 10px;
+}
+
+section#films div {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+
+section#films figure {
+	position: relative;
+	margin: 10px;
+	transition: 0.5s;
+}
+
+section#films figure:hover {
+	transform: scale(1.01, 1.01);
+}
+
+section#films figure img {
+	height: 200px;
+}
+
+section#films figcaption {
+	font-size: 1em;
+	padding: 2px;
+	background: rgba(33, 33, 33, 0.7);
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+section#films figcaption a {
+	color: #fff;
+}
+
+/* bouton retour haut */
+#button {
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.493);
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 5px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s, 
+		opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+    z-index: 1000;
+}
+#button::after {
+	content: "\f077";
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 50px;
+	color: #fff;
+}
+#button:hover {
+	cursor: pointer;
+	background-color: #333;
+}
+#button:active {
+	background-color: #555;
+}
+#button.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*media queries*/
+@media screen and (max-width: 1000px) {
+	figcaption.caption a {
+		font-size: 1.8em;
+		letter-spacing: 0.2em;
+		color: white;
+		width: 250px;
+		height: 50px;
+	}
+}
+@media screen and (max-width: 640px) {
+	section#films {
+        padding: 10px 0;
+    }
+}
