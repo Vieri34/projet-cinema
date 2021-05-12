@@ -17,10 +17,11 @@ if(!empty($_POST["pseudo"]) && !empty($_POST["pass"]) && !empty($_POST["pass2"])
         }catch(PDOException $e){
             echo "Erreur : " . $e->getMessage();
         }
-    } else {
-        $_SESSION["error"] = "Les mots de passe doivent être identiques.";
-        header("Location: ../index.php");
-        exit;
+    }
+    else {
+    $_SESSION["error"] = "Les mots de passe doivent être identiques.";
+    header("Location: ../index.php");
+    exit;
     }
 } else {
     $_SESSION["error"] = "Tous les champs du formulaire doivent être remplis.";
