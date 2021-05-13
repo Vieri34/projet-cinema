@@ -3,14 +3,13 @@ session_start();
 require __DIR__ . "/requests.php";
 $_SESSION = array();
 
-$uploadDir = "./images/";
+$uploadDir = "../images/" ;
 $targetFile = $uploadDir . basename($_FILES['image']['name']);
 
-/*
+
 if (move_uploaded_file($_FILES['image']['tmp_name'], $targetFile)) {
     echo "Le fichier est valide et a été téléchargé avec succès.";
 }
-*/
 
 try {
     $request = $connect->prepare("INSERT INTO films VALUES(NULL,?,?,?,?,?,?,?,?)");
@@ -24,8 +23,7 @@ try {
         $_POST["synopsis"],
         $targetFile
         ]);
-        header("Location: ../film_saisie_form.php");
-        echo "Le film a été correctement ajouté à la base de donnée.";
+        print "Le film a bien été enregistré ! <a href='../film_saisie_form.php'>Cliquer pour saisir un autre film</a>";
         exit;
 }
 catch(PDOException $e){

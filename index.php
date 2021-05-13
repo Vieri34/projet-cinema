@@ -9,10 +9,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="CinéDéfi est un site de critiques de films">
-		<link rel="icon" type="image/x-icon" href="images/logo-V4-crop.png">
+		<meta name="description" content="Downtown Film est un site de critiques de films">
+		<link rel="icon" type="image/x-icon" href="images/new-logo-icon.png">
 		<title>Downtown Film | Avis et critiques de films</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
 		<link href="./css/base.css" rel="stylesheet" media="all" type="text/css">
 		<link href="./css/nav.css" rel="stylesheet" media="all" type="text/css">
@@ -25,21 +26,12 @@
 			include "./php/header.php";
 		?>
 		<!-- main -->
-		<main>
+		<main id="index-main">
 			<!-- hero -->
 			<section class="hero">
 					<img id="logo" src="./images/new-logo-resize.png" alt="logo DowntownFilm">
 					<img id="building" src="./images/hero-img.png" alt="buildings">
 			</section>
-			<!-- forme de division 
-			<div class="shape-div">
-				<div class="custom-shape-divider">
-					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-						<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-					</svg>
-				</div>
-			</div>
-			-->
 			<!--films-->
 			<section id="films">
 				<h1 class="titre-main-page">En ce moment au cinéma</h1>
@@ -53,6 +45,7 @@
 					}
 					?>
 				</div>
+				<a href="./films.php" class="custom-btn">Plus de films</a>
 			</section>
 		</main>
 		<!-- footer -->

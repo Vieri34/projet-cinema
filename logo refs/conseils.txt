@@ -1,0 +1,4 @@
+Changer Mon compte/connexion selon si l'utilisateur est connecté
+garder saisie film --> interface admin
+style formulaires
+404 logo du bas

@@ -26,11 +26,16 @@ body {
 
 main {
 	min-height: 70vh;
+	padding-top: 100px;
 }
 
 li {
 	list-style-type: none;
-  }
+}
+
+p, a, h1, h2, h3, h4, h5, i {
+	color: #1D1D1D;
+}
 
 /*liens*/
 a, button, .icons i {
@@ -38,8 +43,25 @@ a, button, .icons i {
 	transition: 0.3s;
 }
 
-a:hover, ul.sous-menu a:hover {
-	color: #ff4d30;
+/*boutons ou liens*/
+a:hover, button:hover {
+	color: #ff4d30 !important;
+}
+
+.custom-btn {
+    font-family: Arial;
+    font-size: 0.9em;
+	font-weight: bold;
+    color: #fff;
+    background: #ff4d30;
+    padding: 5px 10px;
+    border-radius: 18px;
+	border: 2px solid transparent;
+}
+
+.custom-btn:hover {
+    background: transparent;
+	border: 2px solid #ff4d30;
 }
 
 /* formulaire inscription/connexion */

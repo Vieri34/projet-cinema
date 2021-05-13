@@ -50,4 +50,3 @@ function getFilmsByCategory($dbConn, $films) {
     $data = $request->fetchAll(PDO::FETCH_ASSOC);
     return $data;
 }
-

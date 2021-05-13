@@ -21,14 +21,6 @@
 								echo "<li><a href='categories.php?numero=".$category['id']."'>".$category['genre']."</a></li>";
 							}
 							?>
-							<!-- <li><a href="">Action</a></li>
-							<li><a href="#">Aventure</a></li>
-							<li><a href="#">Comédie</a></li>
-							<li><a href="#">Documentaire</a></li>
-							<li><a href="#">Drame</a></li>
-							<li><a href="#">Fantastique</a></li>
-							<li><a href="#">Romance</a></li>
-							<li><a href="#">Science Fiction</a></li> -->
 						</ul>
 					</li>
 					<li><a href="#">Favoris</a></li>
@@ -43,21 +35,13 @@
 					<span></span>
 					<ul id="menu-smart">
 						<li><a href='./index.php?page=1'>Accueil</a></li>
-						<li><a href="./films.php">Films <i class="fas fa-chevron-down"></i></a>
-							<ul class="sous-menu">
+						<li><a href="#">Films</a>
+							<ul id="category-smart" class="sous-menu">
 								<?php
 								foreach ($categories as $category) {
 									echo "<li><a href='categories.php?numero=".$category['id']."'>".$category['genre']."</a></li>";
 								}
 								?>
-								<!-- <li><a href="#">Action</a></li>
-								<li><a href="#">Aventure</a></li>
-								<li><a href="#">Comédie</a></li>
-								<li><a href="#">Documentaire</a></li>
-								<li><a href="#">Drame</a></li>
-								<li><a href="#">Fantastique</a></li>
-								<li><a href="#">Romance</a></li>
-								<li><a href="#">Science Fiction</a></li> -->
 							</ul>
 						</li>
 						<li><a href="#">Favoris</a></li>
