@@ -37,6 +37,8 @@
                 <form method="post" action="./php/inscription.php">
                     <label for="pseudo">Pseudo :</label>
                     <input type="text" id="pseudo" name="pseudo"> <!-- $_POST["pseudo"] -->
+					<label for="mail">Mail :</label>
+                    <input type="email" id="mail" name="mail"> <!-- $_POST["mail"] -->
                     <label for="pass">Mot de passe :</label>
                     <input type="password" id="pass" name="pass"> <!-- $_POST["pass"] -->
                     <label for="pass2">Confirmation :</label>

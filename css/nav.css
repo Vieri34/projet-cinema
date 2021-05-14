@@ -101,6 +101,16 @@ ul li:hover .sous-menu {
   border-radius: 50%;
 }
 
+.icons #txtHint {
+  background: #fff;
+  text-align: center;
+}
+
+.icons #txtHint a {
+  padding: 20px;
+}
+
+
 /* search bar */
 .search {
   padding: 10px;
@@ -328,7 +338,7 @@ ul li:hover .sous-menu {
   transition: 0.2s;
 }
 
-.navbar-fixed-top.scrolled a, .navbar-fixed-top.scrolled .icons i {
+.navbar-fixed-top.scrolled a, .navbar-fixed-top.scrolled i {
   color: #fff;
 }
 
@@ -354,6 +364,10 @@ ul li:hover .sous-menu {
 
 .navbar-fixed-top.scrolled #menu-toggle span {
   background: #fff;
+}
+
+.navbar-fixed-top.scrolled #txtHint a {
+  color: #1D1D1D;
 }
 
 /*footer*/

@@ -50,3 +50,34 @@ function getFilmsByCategory($dbConn, $films) {
     $data = $request->fetchAll(PDO::FETCH_ASSOC);
     return $data;
 }
+
+function registerUser($dbConn, $user, $mail, $pwd)
+{
+    $request = $dbConn->prepare("INSERT INTO utilisateur(pseudo, mail, pass) VALUES(?, ?, ?)");
+        $request->execute([
+            strip_tags($user),
+            strip_tags($mail), 
+            password_hash($pwd, PASSWORD_BCRYPT)
+        ]);
+}
+
+function getUserByPseudo($dbConn, $pseudo)
+{
+    $request = $dbConn->prepare("SELECT * FROM utilisateur WHERE pseudo = ?");
+    $request->execute(array(
+        $pseudo
+    ));
+    $data = $request->fetch(PDO::FETCH_ASSOC);
+    return $data;
+}
+
+/* fonction pour rechercher un film
+function searchFilm($dbConn, $search) {
+    $search = $connect->prepare("SELECT * FROM films WHERE id = ?");
+    $search->execute([
+        "%".$_POST['search']."%", 
+        "%".$_POST['search']."%"
+        ]);
+    $results = $search->fetchAll(PDO::FETCH_ASSOC);
+}
+*/
