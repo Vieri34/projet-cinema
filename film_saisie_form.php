@@ -53,7 +53,7 @@
 							?>
                         </select>
                         
-                        <label for="synopsis">Synopsys</label>
+                        <label for="synopsis">Synopsis</label>
                         <textarea id="synopsis" name="synopsis"></textarea>
                         
                         <label for="image">Image (sans espaces)</label>

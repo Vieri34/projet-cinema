@@ -6,14 +6,11 @@ $_SESSION = array();
 
 if(!empty($_POST["pseudo"]) && !empty($_POST["pass"])) {
     try {
-        $request = $connect->prepare("SELECT * FROM utilisateur WHERE pseudo=?");
-        $request->execute([
-            $_POST["pseudo"]
-        ]);
-        $data = $request->fetch(PDO::FETCH_ASSOC);
+        $data = getUserByPseudo($connect, $_POST["pseudo"]);
         if($data) {
             if(password_verify($_POST["pass"], $data["pass"])) {
-                $_SESSION["pseudo"] = $_POST["pseudo"];
+                $_SESSION["pseudo"] = strip_tags($_POST["pseudo"]);
+                $_SESSION["mail"] = strip_tags($data["mail"]);
                 header("Location: ../bonjour.php");
                 exit;
             } else {

@@ -1,5 +1,5 @@
         <?php
-	    	$categories = getCategories($connect); 
+	    	$categories = getCategories($connect);
 		?>
 		
 		<header class="navbar-fixed-top">
@@ -51,11 +51,13 @@
 			<!--connexion-->
 			<div class="icons">
 				<a href="#"><i class="fas fa-user"></i></a>
-				<form class="search">
+				<form class="search" method="get" action="./php/search.php">
 					<div class="search-wrapper">
-						<input type="text" name="search" placeholder="Rechercher un film..." class="search-field">
+						<input type="text" name="search-film" placeholder="Rechercher un film..." class="search-field" onkeyup="showHint(this.value)">
 						<i class="fa fa-search search-icon"></i>
 					</div>
+					<div id="txtHint"></div>
 				</form>
 			</div>
 		</header>
+		
