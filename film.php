@@ -15,7 +15,7 @@ if(!$film) {
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="CinéDéfi est un site de critiques de films">
 		<link rel="icon" type="image/x-icon" href="images/new-logo-icon.png">
-		<title>Downtown Film | <?php echo $film['titre']?></title>
+		<title><?php echo $df; ?> | <?php echo $film['titre']; ?></title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
 		<link href="css/lightbox.css" rel="stylesheet">
@@ -57,7 +57,7 @@ if(!$film) {
 						</div>
 					</div>
 					<div class="synopsis">
-						<h3 class="titre-synopsis">Synopsis</h3>
+						<h3 class="title-synopsis">Synopsis</h3>
 						<p class="text-synopsis"><?php echo $film['synopsis']?></p>
 						<a href="#" class="categorie-film custom-btn"><?php echo $film['genre']?></a>
 					</div>
@@ -78,11 +78,20 @@ if(!$film) {
 				</div>
 				-->
 				<!--commentaires-->
-				<div id="com-inner">
-					<input type="text" name="pseudo" id="pseudo" placeholder="Pseudo">
-					<textarea rows="5" placeholder="Laissez un commentaire ici..." name="comment" id="comment" required></textarea>
-					<button class="custom-btn">Envoyer</button>
-				</div>
+				<form id="com-inner"  method="post" action="./php/comments.php">
+					<?php
+					if(!empty($_SESSION["pseudo"])) {
+						echo "<h5>".$_SESSION["pseudo"]."</h5>";
+					}
+					?>
+					<?php
+					if(!empty($_SESSION["error"])) {
+						echo "<a href='./connexion_form.php'>Se connecter</a>";
+					}
+					?>
+					<textarea rows="5" name="commentaire" id="commentaire" placeholder="Laissez un commentaire ici..." required></textarea>
+					<button type="submit" class="custom-btn">Envoyer</button>
+				</form>
 			</section>
 		</main>
 		<!--footer-->

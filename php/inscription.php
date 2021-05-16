@@ -11,7 +11,8 @@ if(!empty($_POST["pseudo"]) && !empty($_POST["mail"]) && !empty($_POST["pass"]) 
             $_SESSION["mail"] = strip_tags($_POST["mail"]);
             header("Location: ../index.php");
             exit;
-        }catch(PDOException $e){
+        }
+        catch(PDOException $e){
             echo "Erreur : " . $e->getMessage();
         }
     }
@@ -20,7 +21,8 @@ if(!empty($_POST["pseudo"]) && !empty($_POST["mail"]) && !empty($_POST["pass"]) 
     header("Location: ../index.php");
     exit;
     }
-} else {
+}
+else {
     $_SESSION["error"] = "Tous les champs du formulaire doivent être remplis.";
     header("Location: ../index.php");
     exit;

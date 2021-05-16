@@ -23,7 +23,7 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
-/* fonction recherche de films */
+// fonction recherche de films
 function showHint(str) {
   if (str.length == 0) {
     document.getElementById("txtHint").innerHTML = "";
@@ -39,3 +39,4 @@ function showHint(str) {
     xmlhttp.send();
   }
 }
+

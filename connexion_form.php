@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="CinéDéfi est un site de critiques de films">
 		<link rel="icon" type="image/x-icon" href="images/new-logo-icon.png">
-		<title>Downtown Film | Formulaire de connexion</title>
+		<title><?php echo $df; ?> | Formulaire de connexion</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
 		<link href="./css/base.css" rel="stylesheet" media="all" type="text/css">
@@ -24,23 +24,38 @@
 			include "./php/header.php";
 		?>
 		<!-- main -->
-		<main class="form-login">
-			<section>
-				<h1 class="titre-main-page">Formulaire de connexion</h1>
-				    <!--formulaire-->				
-                    <form action="./php/connexion.php" method="post">
-                        <label for="pseudo">Pseudo</label>
-                        <input type="text" name="pseudo" id="pseudo">
-                        <label for="pass">Mot de passe</label>
-                        <input type="password" name="pass" id="pass">
-                        <button type="submit">Valider</button>
-                    </form>
+		<main>
+			<!-- banière -->
+			<section id="banner">
+				<div id="banner-txt">
+					<h1>Formulaire de connexion</h1>
+				</div>
+			</section>
+			<!-- formulaire de connexion-->
+			<section class="form-login">
+				<form action="./php/connexion.php" method="post">
+					<h2>Se connecter sur DownTown Film</h2>
 
+					<label for="pseudo">Pseudo</label>
+					<input type="text" name="pseudo" id="pseudo">
+
+					<label for="pass">Mot de passe</label>
+					<input type="password" name="pass" id="pass">
+					
+                    <button type="submit" class="custom-btn">Valider</button>
+				</form>
                 <?php
                     if(!empty($_SESSION["error"])) {
                     echo "<p>".$_SESSION["error"]."</p>";
                     }
                 ?>
+				<!-- accès au formulaire d'inscription-->
+				<div id="switch-form">
+					<div id="switch-inner">
+						<h2>Pas encore de compte ?</h2>
+						<a href="./inscription_form.php" class="custom-btn">S'inscrire</a>
+					</div>
+				</div>
 			</section>
 		</main>
 		<!-- footer -->
