@@ -50,7 +50,15 @@
 			</nav>
 			<!--connexion-->
 			<div class="icons">
-				<a href="#"><i class="fas fa-user"></i></a>
+				<a href="./inscription_form.php" class="custom-btn">S'inscrire</a>
+				<?php
+                if(!empty($_SESSION["pseudo"])) {
+                    echo "<a href='./compte.php'><i class='fas fa-user'></i></a>";
+                }
+				else {
+					echo "<a href='./connexion_form.php'><i class='fas fa-user'></i></a>";
+				}
+                ?>
 				<form class="search" method="get" action="./php/search.php">
 					<div class="search-wrapper">
 						<input type="text" name="search-film" placeholder="Rechercher un film..." class="search-field" onkeyup="showHint(this.value)">

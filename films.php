@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="CinéDéfi est un site de critiques de films">
 		<link rel="icon" type="image/x-icon" href="images/new-logo-icon.png">
-		<title>Downtown Film | Films sur DownTown Film</title>
+		<title><?php echo $df; ?> | Films sur DownTown Film</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
 		<link href="./css/base.css" rel="stylesheet" media="all" type="text/css">
@@ -26,6 +26,12 @@
 		?>
 		<!-- main -->
 		<main>
+			<!-- banière -->
+			<section id="banner">
+				<div id="banner-txt">
+					<h1>Tout les films répertoriés sur DownTwon Film</h1>
+				</div>
+			</section>
 			<!--films-->
 			<section id="films">
 				<h1 class="titre-main-page">Films sur DownTown Film</h1>

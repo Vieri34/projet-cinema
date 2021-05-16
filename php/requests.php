@@ -1,5 +1,5 @@
 <?php
-// stocker informations bdd dans des variables
+// stocker accès bdd dans variables
 $host="localhost";
 $bdd="defiwelcine";
 $user="root";
@@ -7,14 +7,17 @@ $pass="PRODUCTION34";
 
 $connect = new PDO("mysql:host=$host;dbname=$bdd;charset=utf8", $user, $pass);
 
-// fonction pour récuperer tout les films
+// nom site
+$df = "DownTown Film";
+
+// récuperer tout les films
 function getAllFilms($dbConn) {
     $request = $dbConn->query("SELECT * FROM films");
     $data = $request->fetchAll(PDO::FETCH_ASSOC);
     return $data;
 }
 
-// fonction pour récuperer un film
+// récuperer un film
 function getFilmById($dbConn, $id) {
     $request = $dbConn->prepare("SELECT * FROM films WHERE id = ?");
     $request->execute(array(
@@ -24,14 +27,14 @@ function getFilmById($dbConn, $id) {
     return $data;
 }
 
-// fonction pour récuperer toutes les catégories
+// récuperer toutes les catégories
 function getCategories($dbConn) {
     $request = $dbConn->query("SELECT * FROM genre");
     $data = $request->fetchAll(PDO::FETCH_ASSOC);
     return $data;
 }
 
-// fonction pour récuperer une catégorie
+// récuperer une catégorie
 function getCategory($dbConn, $id) {
     $request = $dbConn->prepare("SELECT * FROM genre WHERE id = ?");
     $request->execute(array(
@@ -41,7 +44,7 @@ function getCategory($dbConn, $id) {
     return $data;
 }
 
-// fonction pour récuperer touts les films d'une catégorie
+// récuperer tout les films d'une catégorie
 function getFilmsByCategory($dbConn, $films) {
     $request = $dbConn->prepare("SELECT * FROM films WHERE genre = ?");
     $request->execute(array(
@@ -51,18 +54,18 @@ function getFilmsByCategory($dbConn, $films) {
     return $data;
 }
 
-function registerUser($dbConn, $user, $mail, $pwd)
-{
+// insérer les infos d'un utilisateur
+function registerUser($dbConn, $user, $mail, $pwd) {
     $request = $dbConn->prepare("INSERT INTO utilisateur(pseudo, mail, pass) VALUES(?, ?, ?)");
-        $request->execute([
-            strip_tags($user),
-            strip_tags($mail), 
-            password_hash($pwd, PASSWORD_BCRYPT)
-        ]);
+    $request->execute([
+        strip_tags($user),
+        strip_tags($mail), 
+        password_hash($pwd, PASSWORD_BCRYPT)
+    ]);
 }
 
-function getUserByPseudo($dbConn, $pseudo)
-{
+// récuperer le pseudo d'un utilisateur
+function getUserByPseudo($dbConn, $pseudo) {
     $request = $dbConn->prepare("SELECT * FROM utilisateur WHERE pseudo = ?");
     $request->execute(array(
         $pseudo
@@ -71,13 +74,19 @@ function getUserByPseudo($dbConn, $pseudo)
     return $data;
 }
 
-/* fonction pour rechercher un film
-function searchFilm($dbConn, $search) {
-    $search = $connect->prepare("SELECT * FROM films WHERE id = ?");
-    $search->execute([
-        "%".$_POST['search']."%", 
-        "%".$_POST['search']."%"
-        ]);
-    $results = $search->fetchAll(PDO::FETCH_ASSOC);
+// mettre à jour son pseudo
+function updatePseudo($dbConn, $pseudo) {
+    $request = $dbConn->prepare("UPDATE utilisateur SET pseudo=? WHERE pseudo=?");
+    $request->execute([
+        strip_tags($_POST["pseudo"]),
+        $_SESSION["pseudo"]
+    ]);
 }
-*/
+
+// insérer des commentaires
+function writeComment($dbConn, $comment) {
+    $request = $dbConn->prepare("INSERT INTO commentaires(commentaire) VALUES(?)");
+    $request->execute([
+        strip_tags($comment)
+    ]);
+}
