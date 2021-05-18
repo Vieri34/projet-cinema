@@ -1,0 +1,201 @@
+@font-face {
+	font-family: Vanguard; src: url(../fonts/VanguardCF-Regular.otf);
+}
+
+@font-face {
+	font-family: Vanguard-Bold; src: url(../fonts/VanguardCF-Bold.otf);
+}
+
+@font-face {
+	font-family: WorkSans-ExtraLight; src: url(../fonts/WorkSans-ExtraLight.otf);
+}
+
+@font-face {
+	font-family: Playfair Display; src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+	font-family: Helvetica; src: url(../fonts/Helvetica.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+    height:100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Helvetica;
+	min-height: 100vh !important;
+}
+
+main {
+	min-height: 100vh;
+	padding-top: 100px;
+}
+
+li {
+	list-style-type: none;
+}
+
+p, a, h1, h2, h3, h4, h5, i {
+	color: #1D1D1D;
+}
+
+p {
+	font-size: 1em;
+	text-align: justify;
+}
+
+/* titres */
+h1, h2 {
+	font-family: Vanguard-Bold;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*liens*/
+a, button, .icons i {
+	text-decoration: none !important;
+	transition: 0.3s;
+}
+
+/*boutons ou liens*/
+a:hover, button:hover {
+	color: #ff4d30 !important;
+}
+
+.custom-btn {
+    font-family: Arial;
+    font-size: 0.9em;
+	font-weight: bold;
+    color: #fff;
+    background: #ff4d30;
+    padding: 5px 10px;
+    border-radius: 18px;
+	border: 2px solid transparent;
+}
+
+.custom-btn:hover {
+    background: transparent;
+	border: 2px solid #ff4d30;
+}
+
+/* bannière */
+section#banner {
+	height: 30vh;
+	position: relative;
+	background: url(../images/banner.jpg);
+}
+
+section#banner #banner-txt {
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	top: 30%;
+	right: 10%;
+	z-index: 3;
+}
+
+section#banner #banner-txt h1 {
+	width: 100%;
+	font-size: 2.8em;
+	letter-spacing: 1px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* formulaire inscription/connexion/saisie */
+.form-login {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background:#fcf7eb;
+	padding: 20px;
+}
+
+.form-login form {
+	width: 600px;
+	margin: 20px;
+	padding: 10px;
+}
+
+.form-account {
+	width: initial !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-account input {
+	width: auto !important; /* uniquement pour page compte.php*/
+}
+
+.form-login h2{
+	width: 100%;
+	text-align: center;
+}
+
+.form-login label {
+	font-size: 1.1em;
+	margin: 10px;
+}
+
+.form-login input {
+	width: 100%;
+	padding: 3px;
+}
+
+.form-login button {
+	font-size: 1.1em;
+	margin: 10px;
+}
+
+#switch-form {
+	width: 600px;
+	height: 80vh;
+	margin: 20px;
+	padding: 10px;
+	background: url(../images/3283826.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#switch-form #switch-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#switch-form h2 {
+	color: #fff;
+}
+
+
+@media screen and (max-width: 1000px) {
+	.form-login #form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 10px;
+		border-right: none;
+	}
+	.connexion-exist{
+		padding: 10px;
+	}
+}

@@ -1,0 +1,18 @@
+
+
+Liste choses à faire:
+
+-pages mentions Légales/politique de confidentialité (html/css)
+-module connexion/inscription (php)
+-module de recherche de films (php/ajax?)
+-système de membres: admin/membre/etc... (php)
+-module de favoris (php)
+-zone commentaires sur la page film (html/css)
+-zone notes/étoiles sur la page film (html/css/js)
+-module commentaire (php)
+-module notes/étoiles (php)
+-modal box pour le formulaire connexion (html/css/js)
+-page pour le formulaire inscription (html/css)
+-bouton "load more" pour afficher plus de vidéos
+-formulaire de saisie de films (php/html/css)
+-rentrer des films dans la bdd via le formulaire de saisie de films

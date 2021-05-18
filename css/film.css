@@ -1,0 +1,127 @@
+            section#page {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                background: #fcf7eb;
+            }
+            
+            section#page img {
+                width: 310px;
+                height: 420px;
+                object-fit: cover;
+                padding: 20px;
+            }
+            
+            .text-film {
+                width: 500px;
+                margin: 0 20px;
+            }
+            
+            .text-film h1 {
+                width: 100%;
+                font-size: 2.5em;
+                letter-spacing: 1px;
+                margin: 10px 0;
+            }
+            
+            #info-film {
+                margin: 20px 10px;
+            }
+            
+            .text-lign {
+                display: flex;
+            }
+            
+            .text-lign:nth-child(1) {
+                border-top: 1px solid #dbdbdd;
+            }
+            
+            .text-lign h4,
+            .text-lign a {
+                font-size: 1em;
+                margin: 0;
+                padding: 5px;
+            }
+            
+            .text-lign a {
+                font-family: Arial;
+                color: #ff4d30;
+                font-weight: bold;
+            }
+            
+            .text-lign a:hover {
+                color: #8a30ff !important;
+            }
+            
+            .synopsis {
+                margin: 20px 10px;
+                border-top: 1px solid #dbdbdd;
+            }
+            
+            .synopsis h3 {
+                font-size: 1.5em;
+                padding-top: 5px;
+            }
+            /*section commentaires*/
+            
+            section#comments {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 20px;
+            }
+            
+            section#comments h2 {
+                width: 100%;
+                font-size: 2em;
+                letter-spacing: 1px;
+                text-align: center;
+                margin: 10px 0;
+            }
+            
+            section#com-inner {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            #com-inner input,
+            #com-inner textarea {
+                width: 100%;
+                margin: 5px;
+            }
+            
+            #id-film {
+                display: none;
+            }
+            /* class notes avec les etoiles */
+            
+            .container {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+            }
+            
+            label {
+                margin-right: 5px;
+            }
+            
+            .rating {
+                direction: rtl;
+            }
+            
+            .rating a {
+                color: #aaa;
+                text-decoration: none;
+                font-size: 2em;
+                transition: color .4s;
+                margin-bottom: 10px;
+            }
+            
+            .rating a:hover,
+            .rating a:focus,
+            .rating a:hover~a,
+            .rating a:focus~a {
+                color: rgb(255, 230, 0);
+            }
+            /* -------------FIN------------- */
