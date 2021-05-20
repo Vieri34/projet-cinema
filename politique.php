@@ -31,20 +31,39 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <h2 class="text-center">Politique de confidentialité </h2>
-                <p>1. La confidentialité des visiteurs de notre site Web est très importante pour nous et nous nous engageons à la protéger.</p><br>
-                <p>Cette politique explique ce que nous faisons de vos informations personnelles.2. Le consentement à notre utilisation des cookies conformément aux termes de cette politique lorsque vous visitez notre site Web pour la première fois nous permet d'utiliser des cookies à chaque fois que vous visitez notre site Web.</p><br>
-                <p>2. Informations sur vos visites et votre utilisation de ce site Web, y compris la source de référence, la durée de la visite, les pages vues et les chemins de navigation du site Web.</p>
-                <p>3. Les informations que vous saisissez lorsque vous vous inscrivez sur notre site Web, telles que votre site Web de messagerie électronique.</p><br>
-                <p>4. Informations que vous saisissez lorsque vous créez un profil sur notre site Web. Par exemple, votre nom, vos photos de profil, votre sexe, votre date de naissance, le statut de votre relation, vos intérêts et vos passe-temps, vos informations relatives à l'éducation et à votre emploi.</p>
-                <p>5. Les informations que vous saisissez pour vous abonner à nos e-mails et / ou newsletters.
-                Les informations générées lors de l'utilisation de notre site Web, y compris quand, à quelle fréquence et dans quelles circonstances vous l'utilisez.</p>
-                <p>6. Les informations générées lors de l'utilisation de notre site Web, y compris quand, à quelle fréquence et dans quelles circonstances vous l'utilisez.</p>
-                <p>7. Informations relatives à tout ce que vous achetez, aux services que vous utilisez ou à la transaction que vous effectuez via notre site Web, qui comprend votre nom, adresse, numéro de téléphone, adresse e-mail et détails de carte de crédit.</p><br>
-                <p>8. Les informations que vous publiez sur notre site Web dans l'intention de les publier sur Internet.</p><br>
-                <p>9. Toute autre information personnelle que vous nous envoyez.</p>
-                <p>D. Utilisation des informations personnelles</p>
-                <p>Les informations personnelles qui nous sont soumises via notre site Web seront utilisées aux fins spécifiées dans cette politique ou sur les pages pertinentes du site Web. Nous pouvons utiliser vos informations personnelles pour ce qui suit:</p>
+              <h2 class="text-center">Politique de confidentialité </h2>
+            <p>Dans le cadre de son activité, la société Downtownfilm, dont le siège social est situé au Adresse : 79 Avenue Antoine de Saint-Exupéry, 34200 Sète, est amenée à collecter et à traiter des informations dont certaines sont qualifiées de "données personnelles". 
+            Downtownfilm attache une grande importance au respect de la vie privée, et n’utilise que des donnes de manière responsable et confidentielle et dans une finalité précise.</p><br>
+             
+             <h5><strong>Données personnelles</strong></h5>
+            <p>Sur le site web Downtownfilm cine.defiweb34.com, il y a 2 types de données susceptibles d’être recueillies :</p><br>
+
+            <h5><strong> données transmises directement</strong></h5>
+            <p>Ces données sont celles que vous nous transmettez directement, via un formulaire de contact ou bien par contact direct par email. Sont obligatoires dans le formulaire de contact le champs  prénom et nom ,  entreprise ou organisation et email.</p><br>
+            <h5><strong>es données collectées automatiquement</strong></h5>
+            <p>Lors de vos visites, une fois votre consentement donné, nous pouvons recueillir des informations de type « web analytics » relatives à votre navigation, la durée de votre consultation, votre adresse IP, votre type et version de navigateur. La technologie utilisée est le cookie.</p>
+
+               <h5><strong>Utilisation des données</strong></h5>
+            <p>Les données que vous nous transmettez directement sont utilisées dans le but de vous re-contacter et/ou dans le cadre de la demande que vous nous faites. Les données « web analytics » sont collectées de forme anonyme (en enregistrant des adresses IP anonymes) par Google Analytics, et nous permettent de mesurer l'audience de notre site web, les consultations et les éventuelles erreurs afin d’améliorer constamment l’expérience des utilisateurs. Ces données sont utilisées par Downtownfilm, responsable du traitement des données, et ne seront jamais cédées à un tiers ni utilisées à d’autres fins que celles détaillées ci-dessus.</p><br>
+            <h5><strong>Base légale</strong></h5>
+            <p>Les données personnelles ne sont collectées qu’après consentement obligatoire de l’utilisateur. Ce consentement est valablement recueilli (boutons et cases à cocher), libre, clair et sans équivoque.</p><br>
+
+             <h5><strong>Durée de conservation</strong></h5>
+            <p>Les données seront sauvegardées durant une durée maximale de 3 ans.</p><br>
+
+            <h5><strong>Cookies</strong></h5>
+            <p>Voici la liste des cookies utilisées et leur objectif :</p><br>
+            <p>Cookies Google Analytics (liste exhaustive) : Web analytics
+            Nom du cookie : Permet de garder en mémoire le fait que vous acceptez les cookies afin de ne plus vous importuner lors de votre prochaine visite.</p><br>
+
+            <h5><strong>Vos droits concernant les données personnelles</strong></h5>
+            <p>Vous avez le droit de consultation, demande de modification ou d’effacement sur l’ensemble de vos données personnelles. Vous pouvez également retirer votre consentement au traitement de vos données.</p><br>
+
+             <h5><strong>Contact délégué à la protection des données</strong></h5>
+             <i class="far fa-envelope"> mathieudupont@gmail.com</i><br>
+             <i class="fas fa-phone-alt"> 04 85 25 24 10 </i>
+             
+                        
             </div>  
         </div>
     </div>

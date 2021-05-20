@@ -1,0 +1,26 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 700px;
+            padding: 40px;
+            margin: 100px auto;
+            font-size: 16px;
+            font-family: sans-serif;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+            border-radius: 10px;
+        }
+        
+        .container h2 {
+            margin: 40px auto;
+        }
+        
+        .container h5 {
+            margin: 10px 10px;
+        }
+        
+        .container p {
+            margin: 5px 10px;
+        }
